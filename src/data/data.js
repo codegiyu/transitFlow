@@ -39,6 +39,8 @@ import pricing from "../assets/icons/pricing.svg"
 import onTime from "../assets/icons/on-time.svg"
 import allDay from "../assets/icons/24-7.svg"
 import shipping from "../assets/icons/shipping.svg"
+import martin from "../assets/images/martin.png"
+import smith from "../assets/images/smith.png"
 
 export const CONTACT_DATA = {
     mail: {
@@ -296,3 +298,20 @@ export const FEATURES_DATA = {
         feature: "Transparent Pricing"
     },
 }
+
+export const TESTIMONIAL_DATA = [
+    {
+        name: "Kathleen Smith",
+        image: smith,
+        jobTitle: "Fuel Company",
+        feedback: "Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+        rating: "5.0"
+    },
+    {
+        name: "John Martin",
+        image: martin,
+        jobTitle: "Restration Company",
+        feedback: "Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+        rating: "5.0"
+    }
+]

@@ -7,6 +7,8 @@ import Team from "../sections/Team";
 import Contact from "../sections/Contact";
 import Projects from "../sections/Projects";
 import WhyUs from "../sections/WhyUs";
+import WhyChoose from "../sections/WhyChoose";
+import Testimonial from "../sections/Testimonial";
 
 const Landing = () => {
   return (
@@ -22,6 +24,12 @@ const Landing = () => {
       </ErrorBoundary>
       <ErrorBoundary>
         <Projects />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Testimonial />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <WhyChoose />
       </ErrorBoundary>
       <ErrorBoundary>
         <Team />

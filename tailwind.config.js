@@ -6,8 +6,8 @@ module.exports = {
       "sm": "576px",
       "md": "768px",
       "lg": "992px",
-      "xl": "1200px",
-      "xxl": "1480px",
+      "xl": "1260px",
+      "xxl": "1440px",
     },
     extend: {
       colors: {
@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: {
         gradient: "linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 50.75%, #FFD7A6 102.71%)",
+        gradientReverse: "linear-gradient(274.06deg, #FFB629 -1.21%, #FFDA56 50.75%, #FFD7A6 102.71%)",
         teamGradient: "linear-gradient(4.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%)",
         clientGrad: "linear-gradient(0deg, #111C54 0%, #111C5400 98.72%)",
         projectGrad: "linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%)"
