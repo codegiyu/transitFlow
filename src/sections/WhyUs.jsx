@@ -80,7 +80,7 @@ const WhyUs = () => {
                             Delivered Packages
                         </p>
                     </div>
-                    <div className="w-full border-r pt-[2.875rem] pb-[2.375rem] flex items-center justify-center gap-4">
+                    <div className="w-full pt-[2.875rem] pb-[2.375rem] flex items-center justify-center gap-4">
                         <h2 data-purecounter-start="0" data-purecounter-end="3594" className="purecounter font-rubik 
                             font-semibold text-[3.125rem] leading-[3.75rem] text-htext"
                         >
