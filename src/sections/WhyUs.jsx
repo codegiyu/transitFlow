@@ -7,10 +7,24 @@ import { SectionTitleDark } from "../components/SectionTitle"
 import { FEATURES_DATA } from "../data/data"
 import FeatureSingle from "../components/FeatureSingle"
 import uuid from "react-uuid"
+import PureCounter from "@srexi/purecounterjs"
 
 const WhyUs = () => {
     const { delivery, cost } = FEATURES_DATA
     const featuresArr = [delivery, cost]
+
+    const pure = new PureCounter({
+        selector: ".purecounter",
+        start: 0,
+        duration: 3,
+        once: false,
+        repeat: false,
+        decimals: 0,
+        legacy: true,
+        filesizing: false,
+        currency: false,
+        separator: false,
+    })
 
     return (
         <section className="w-full pt-[16rem] bg-white flex justify-center relative z-0">
@@ -56,7 +70,9 @@ const WhyUs = () => {
                 </section>
                 <section className="w-full border-y border-[#D4D4D4] grid grid-cols-2">
                     <div className="w-full border-r pt-[2.875rem] pb-[2.375rem] flex items-center justify-center gap-4">
-                        <h2 className="font-rubik font-semibold text-[3.125rem] leading-[3.75rem] text-htext">
+                        <h2 data-purecounter-start="0" data-purecounter-end="1294" className="purecounter font-rubik 
+                            font-semibold text-[3.125rem] leading-[3.75rem] text-htext"
+                        >
                             1294
                         </h2>
                         <span className="w-4 h-4 bg-gradient"></span>
@@ -65,7 +81,9 @@ const WhyUs = () => {
                         </p>
                     </div>
                     <div className="w-full border-r pt-[2.875rem] pb-[2.375rem] flex items-center justify-center gap-4">
-                        <h2 className="font-rubik font-semibold text-[3.125rem] leading-[3.75rem] text-htext">
+                        <h2 data-purecounter-start="0" data-purecounter-end="3594" className="purecounter font-rubik 
+                            font-semibold text-[3.125rem] leading-[3.75rem] text-htext"
+                        >
                             3594
                         </h2>
                         <span className="w-4 h-4 bg-gradient"></span>

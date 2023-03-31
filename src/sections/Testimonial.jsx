@@ -2,6 +2,9 @@ import ErrorBoundary from "../components/ErrorBoundary"
 import { SectionTagLight } from "../components/SectionTag"
 import { SectionTitleDark } from "../components/SectionTitle"
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs"
+import { TESTIMONIAL_DATA } from "../data/data"
+import { TestimonialSingleDark, TestimonialSingleLight } from "../components/TestimonialSingle"
+import uuid from "react-uuid"
 
 const Testimonial = () => {
     return (
@@ -31,8 +34,17 @@ const Testimonial = () => {
                         </button>
                     </div>
                 </section>
-                <section>
-
+                <section className="w-full grid grid-cols-2">
+                    { TESTIMONIAL_DATA.map((item,idx) => {
+                        return (
+                            <ErrorBoundary key={uuid()}>
+                                { idx % 2 
+                                    ? <TestimonialSingleDark key={uuid()} testimonialProps={ item } />
+                                    : <TestimonialSingleLight key={uuid()} testimonialProps={ item } />
+                                }
+                            </ErrorBoundary>
+                        )
+                    }) }
                 </section>
             </section>
         </section>
