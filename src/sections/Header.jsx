@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <header className="w-full px-20 py-[2.875rem] flex justify-center text-white bg-blue relative">
-            <section className="w-[1200px] flex items-center justify-between">
+            <section className="w-[75rem] flex items-center justify-between">
                 <Logo />
                 <div className="w-fit flex gap-10">
                     { contactsArr.map(item => {
@@ -32,7 +32,7 @@ const Header = () => {
             <section className="w-full h-[4.875rem] bg-blue25 absolute -bottom-[4.875rem] left-0 z-10
                 px-20"
             >
-                <div className="max-w-[1200px] mx-auto flex items-center justify-between">
+                <div className="max-w-[75rem] mx-auto flex items-center justify-between">
                     <nav>
                         <ul className="font-krub font-semibold text-base leading-[1.375rem] w-max flex">
                             <li className="pr-[1.875rem] border-r border-[#FFFFFF20]">

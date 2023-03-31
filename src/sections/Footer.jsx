@@ -24,7 +24,6 @@ const Footer = () => {
 
         try {
             setValue(value)
-            console.log(!helpers.validateEmail(value))
             if (!helpers.validateEmail(value)) throw new Error("invalid email")
 
             setHasError(false)
@@ -62,6 +61,7 @@ const Footer = () => {
     const subscribeInput = {
         type: "email",
         placeholder: "Email Here*",
+        name: "email",
         value,
         changeHandler,
         hasError
@@ -69,6 +69,7 @@ const Footer = () => {
 
     const subscribeBtn = {
         text: isSubmitting ? "Sending..." : "Send now",
+        type: "submit",
         disabled,
         clickHandler
     }
@@ -80,7 +81,7 @@ const Footer = () => {
             </figure>
             <section className="w-full px-20 flex justify-center bg-blue relative z-0 pb-11">
                 <div className="w-full h-[7.375rem] bg-[#FFFFFF08] absolute top-0 left-0 z-[1]"></div>
-                <div className="w-[1200px] grid grid-cols-[320px_100px_100px_320px] justify-between z-[3] text-white">
+                <div className="w-[75rem] grid grid-cols-[320px_100px_100px_320px] justify-between z-[3] text-white">
                     <div className="">
                         <div className="h-[7.375rem] flex items-center relative after:w-[120%] after:z-[2]
                             after:bg-blue after:absolute after:top-0 after:left-[-10%] after:h-full"
@@ -169,7 +170,7 @@ const Footer = () => {
                 </div>
             </section>
             <section className="w-full px-20 flex justify-center bg-blue border-t border-[#4E5683]">
-                <div className="w-[1200px] flex items-center justify-between py-4 font-krub font-medium 
+                <div className="w-[75rem] flex items-center justify-between py-4 font-krub font-medium 
                     text-base leading-[2.5rem]"
                 >
                     <p className=" text-white">

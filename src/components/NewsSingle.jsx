@@ -17,11 +17,11 @@ const NewsSingle = ({ newsProps }) => {
             <figure onMouseEnter={ handleMouseEnter } onMouseLeave={ handleMouseLeave }
                 className="w-full aspect-[1.47] relative flex items-center justify-center">
                 <figcaption className={`w-4/5 h-4/5 bg-blue91 flex items-center justify-center z-[2] relative
-                    ${visibility} transition-opacity duration-300`}
+                    ${visibility} transition-opacity duration-300 ease-in`}
                 >
                     <div className={`w-full h-full absolute top-0 left-0 bg-blue91 z-[1] ${visibility}`}></div>
                     <Link to={ link } className="font-krub font-semibold text-base text-white z-[3] relative
-                        hover:text-gold"
+                        hover:text-gold transition-all duration-300 ease-in"
                     >
                         Read More
                     </Link>
@@ -38,11 +38,13 @@ const NewsSingle = ({ newsProps }) => {
                 </p>
             </div>
             <article className="w-full pl-[1.875rem] border-l">
-                <h5 className="font-rubik font-normal text-[1.5625rem] leading-[1.875rem] text-htext 
-                    hover:text-gold mb-4"
-                >
-                    { title }
-                </h5>
+                <Link to={ link }>
+                    <h5 className="font-rubik font-normal text-[1.5625rem] leading-[1.875rem] text-htext
+                        hover:text-gold mb-4"
+                    >
+                        { title }
+                    </h5>
+                </Link>
                 <p className="font-krub font-medium text-base text-ptext mb-[1.125rem]">
                     { text }
                 </p>

@@ -1,5 +1,5 @@
-const AddressSingle = (props) => {
-    let { icon, topText, bottomText } = props.addressProps
+const AddressSingle = ({ addressProps }) => {
+    let { icon, topText, bottomText } = addressProps
 
     return (
         <div className="w-fit flex items-center gap-4">

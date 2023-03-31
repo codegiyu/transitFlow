@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section className="w-full px-20 aspect-[2.194] relative flex items-center justify-center">
             <img src={ heroImg } alt="hero" className="w-full object-cover absolute top-0 left-0 z-[-1]" />
-            <div className="w-[1200px]">
+            <div className="w-[75rem]">
                 <div className="w-[570px] text-white">
                     <ErrorBoundary>
                         <SectionTagDark text="Logistics & Supply Chain Solutions" />

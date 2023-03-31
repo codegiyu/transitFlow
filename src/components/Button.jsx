@@ -37,18 +37,20 @@ export const ButtonBlue = ({ btnProps }) => {
 }
 
 export const ButtonGoldNormal = ({ btnProps }) => {
-    const { text, disabled, clickHandler } = btnProps
+    const { text, type, disabled, clickHandler } = btnProps
 
     const handleClick = (e) => {
         clickHandler(e)
     }
 
     return (
-        <button onClick={ handleClick } disabled={ disabled }
+        <button onClick={ handleClick } disabled={ disabled } type={ type }
             className="w-fit px-[2.25rem] py-[1.1875rem] bg-gradient z-1 relative overflow-hidden
             transition-all duration-300 hover:scale(1.05) disabled:cursor-not-allowed" 
         >
-            <p className="font-krub font-semibold text-[#23212A] text-base leading-[1.375rem] z-[3] relative">
+            <p className="font-krub font-semibold text-[#23212A] text-base 
+                leading-[1.375rem] z-[3] relative"
+            >
                 { text }
             </p>
         </button>
